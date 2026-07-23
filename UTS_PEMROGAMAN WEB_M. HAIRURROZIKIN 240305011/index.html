@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - HAIRURROZIKIN</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar">
+        <div class="container-lg">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-code"></i> PORTFOLIO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Porofile Mahasiswa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../laporan.php">Laporan Kegiatan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../logout.php"><i class="fas fa-sign-out-alt me-1"></i>Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="container-lg d-flex align-items-center justify-content-center">
+            <div class="row w-100 align-items-center">
+                <div class="col-lg-6 text-white">
+                    <div class="hero-content">
+                        <h1 class="display-3 fw-bold mb-3 animate-fade-in">
+                            Halo, Saya <span class="highlight">HAIRURROZIKIN</span>
+                        </h1>
+                        <p class="lead mb-4 text-light">
+                            Mahasiswa Pendidikan Informatika 
+                        </p>
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#contact" class="btn btn-lg btn-light fw-bold">
+                                <i class="fas fa-envelope"></i> Hubungi Saya
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image">
+                        <a href="#profile" class="profile-link" title="Lihat profil mahasiswa">
+                            <div class="floating-card profile-frame">
+                                <img src="ikin.jpeg" alt="Foto Profil" class="img-fluid shadow profile-photo">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="profile" class="py-5">
+        <div class="container-lg">
+            <h2 class="section-title text-center mb-5">
+                <span class="highlight-text">Tentang Saya</span>
+            </h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-5">
+                    <img src="ppp.jpeg" alt="Tentang Saya" class="img-fluid rounded shadow-lg" style="max-width: 360px; margin: 0 auto; display: block; border-radius: 20px;">
+                </div>
+                <div class="col-lg-7">
+                    <p class="fs-5 mb-4">
+                         Halo, saya Hairurrozikin, mahasiswa Pendidikan Informatika Universitas Hamzanwadi. Saya memiliki minat yang besar di bidang teknologi, khususnya pengembangan web dan pemrograman. Saya terus belajar dan mengembangkan keterampilan untuk menciptakan website yang modern, responsif, dan bermanfaat.
+                    </p>
+                    <p class="fs-5 mb-4">
+                 
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="info-box">
+                                <h6 class="fw-bold mb-2">
+                                    <i class="fas fa-graduation-cap text-primary"></i> Pendidikan
+                                </h6>
+                                <p class="mb-0">Universitas Hamzanwadi - Semester 4</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="info-box">
+                                <h6 class="fw-bold mb-2">
+                                    <i class="fas fa-location-dot text-primary"></i> Lokasi
+                                </h6>
+                                <p class="mb-0">Sandubaya, Selong</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="info-box">
+                                <h6 class="fw-bold mb-2">
+                                    <i class="fas fa-briefcase text-primary"></i> Pengalaman
+                                </h6>
+                                <p class="mb-0">Web Development</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="info-box">
+                                <h6 class="fw-bold mb-2">
+                                    <i class="fas fa-star text-primary"></i> Spesialisasi
+                                </h6>
+                                <p class="mb-0">Frontend & Backend</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container-lg">
+            <h2 class="section-title text-center mb-5">
+                <span class="highlight-text">Keahlian & Teknologi</span>
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 mb-2">Frontend</h5>
+                        <p class="text-muted mb-3">HTML5, CSS3, JavaScript, Bootstrap, React</p>
+                        <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 mb-2">Backend</h5>
+                        <p class="text-muted mb-3">PHP, Python, Node.js, MySQL, API RESTful</p>
+                        <div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 mb-2">Design</h5>
+                        <p class="text-muted mb-3">UI/UX Design, Figma, Adobe XD, Responsive</p>
+                        <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-git"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 mb-2">Version Control</h5>
+                        <p class="text-muted mb-3">Git, GitHub, GitLab, Bitbucket</p>
+                        <div class="progress" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 mb-2">Database</h5>
+                        <p class="text-muted mb-3">MySQL, PostgreSQL, MongoDB, Firebase</p>
+                        <div class="progress" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 82%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h5 class="fw-bold mt-3 mb-2">Tools</h5>
+                        <p class="text-muted mb-3">VS Code, Postman, Docker, Webpack</p>
+                        <div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="py-5">
+        <div class="container-lg">
+            <h2 class="section-title text-center mb-5">
+                <span class="highlight-text">Profile Mahasiswa</span>
+            </h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="height: 260px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <img src="potbar pendidikan informatika.jpeg" alt="Jurusan Pendidikan Informatika">
+                        </div>
+                        <div class="portfolio-content">
+                            <h5 class="fw-bold mb-2">Mahasiswa Pendidikan Informatika</h5>
+                            <p class="text-muted mb-3">Program studi fokus pada teknologi informasi dan pengembangan software modern</p>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-primary">Teknologi</span>
+                                <span class="badge bg-info">Inovasi</span>
+                                <span class="badge bg-warning">Edukasi</span>
+                            </div>
+                            <a href="https://www.instagram.com/p.informatika.hamzanwadi?igsh=ZGdpNGd3NW81dTMz" class="btn btn-sm btn-primary" target="_blank">
+                                <i class="fas fa-link"></i> Lihat Info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="height: 260px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <img src="universitas hamzanwadi.jpg" alt="Universitas Hamzanwadi">
+                        </div>
+                        <div class="portfolio-content">
+                            <h5 class="fw-bold mb-2">universitas hamzanwadi</h5>
+                            <p class="text-muted mb-3">Kampus yang dilengkapi fasilitas modern untuk mendukung proses pembelajaran</p>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-success">Fasilitas</span>
+                                <span class="badge bg-danger">Infrastruktur</span>
+                                <span class="badge bg-secondary">Lingkungan</span>
+                            </div>
+                            <a href="https://www.instagram.com/univ_hamzanwadi?igsh=MW94Y2p5and5Y2Rmdw==" class="btn btn-sm btn-primary" target="_blank">
+                                <i class="fas fa-link"></i> Lihat Info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image" style="height: 260px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <img src="temen sejurusan.jpeg" alt="Teman Sejurusan">
+                        </div>
+                        <div class="portfolio-content">
+                            <h5 class="fw-bold mb-2">Teman satu jurusan</h5>
+                            <p class="text-muted mb-3">Komunitas pembelajaran dan kolaborasi dengan teman-teman satu jurusan</p>
+                            <div class="d-flex gap-2 mb-3">
+                                <span class="badge bg-primary">Komunitas</span>
+                                <span class="badge bg-info">Kolaborasi</span>
+                                <span class="badge bg-dark">Jaringan</span>
+                            </div>
+                            
+                            
+                            <a href="https://www.instagram.com/ikynnn___?igsh=MWg5dGdyc3N1eGZ3cw==" class="btn btn-sm btn-primary" target="_blank">
+                                <i class="fas fa-link"></i> Lihat Info
+                            </a>
+                        </div>
+                    </div>
+                </div>          
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uploaded-gallery mt-5">
+                <h3 class="section-title text-center mb-4">
+                    <span class="highlight-text">Galeri Kegiatan</span>
+                </h3>
+                <div id="uploadedGallery" class="portfolio-grid">
+                    <div class="gallery-loading text-center text-muted py-4">
+                        <i class="fas fa-spinner fa-spin me-2"></i>Memuat galeri kegiatan...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container-lg">
+            <h2 class="section-title text-center mb-5">
+                <span class="highlight-text">Hubungi Saya</span>
+            </h2>
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">Mari Terhubung</h5>
+                        <p class="text-muted">hubungi saya!</p>
+                    </div>
+                    <div class="contact-info mb-3">
+                        <i class="fas fa-envelope text-primary"></i>
+                        <div>
+                            <h6 class="fw-bold mb-0">Email</h6>
+                            <a href="mailto:rozikinikyn1@gmail.com" class="text-decoration-none">rozikinikyn1@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-info mb-3">
+                        <i class="fas fa-phone text-primary"></i>
+                        <div>
+                            <h6 class="fw-bold mb-0">Telepon</h6>
+                            <a href="tel:081915966658" class="text-decoration-none">0819-1596-6658</a>
+                        </div>
+                    </div>
+                    <div class="contact-info mb-4">
+                        <i class="fas fa-map-marker-alt text-primary"></i>
+                        <div>
+                            <h6 class="fw-bold mb-0">Lokasi</h6>
+                            <p class="text-muted mb-0">Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h6 class="fw-bold mb-3">Ikuti Saya</h6>
+                        <div class="d-flex gap-3">
+                            <!-- GITHUB: Ganti # dengan https://github.com/USERNAME_GITHUB -->
+                            <a href="https://github.com/ikin-maker" class="social-icon" title="GitHub" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <!-- FACEBOOK: Ganti # dengan URL profile Facebook -->
+                            <a href="https://www.facebook.com/share/1CygdhVEno/" class="social-icon" title="Facebook" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <!-- WHATSAPP: Ganti # dengan https://wa.me/NOMOR_WA (contoh: https://wa.me/6281915966658) -->
+                            <a href="https://wa.me/6281915966658" class="social-icon" title="WhatsApp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <!-- INSTAGRAM: Ganti # dengan https://instagram.com/USERNAME_INSTAGRAM -->
+                            <a href="https://www.instagram.com/ikynnn___?igsh=MWg5dGdyc3N1eGZ3cw==" class="social-icon" title="Instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form class="contact-form" id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-bold">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label fw-bold">Subjek</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Judul pesan Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label fw-bold">Pesan</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-primary w-100 fw-bold">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container-lg">
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">
+                        <i class="fas fa-code"></i> PORTFOLIO HAIRURROZIKIN
+                    </h6>
+                    <p class="text-muted">Mahasiswa Pendidikan Informatika.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Menu Cepat</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-muted text-decoration-none">Beranda</a></li>
+                        <li><a href="#profile" class="text-muted text-decoration-none">Profile</a></li>
+                        <li><a href="#skills" class="text-muted text-decoration-none">Keahlian</a></li>
+                        <li><a href="#contact" class="text-muted text-decoration-none">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Hubungi</h6>
+                    <p class="text-muted mb-1"><i class="fas fa-envelope"></i> rozikinikyn1@gmail.com</p>
+                    <p class="text-muted mb-1"><i class="fas fa-phone"></i> 0819-1596-6658</p>
+                    <p class="text-muted"><i class="fas fa-map-marker-alt"></i> Indonesia</p>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 PORTFOLIO HAIRURROZIKIN.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
